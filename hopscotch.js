@@ -8,7 +8,7 @@ bot.login(token);
 let users = [];
 
 bot.on('ready', () => {
-  console.log('THE HOP HAS BEEN SCOTCHED!');
+  console.log('THE HOPPITY HAS BEEN SCOTCHED!');
 
   command(bot, 'Gutknecht', users, message => {
     message.channel.send('THE HOP HAS BEEN SCOTCHED!')
