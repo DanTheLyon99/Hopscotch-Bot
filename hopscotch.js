@@ -1,9 +1,10 @@
 const path = require('path');
+const { token } = require('../config.json')
 
 const Discord = require('discord.js');
 const command = require('./hopscotch/command');
 const bot = new Discord.Client();
-bot.login('NzczNzUwMjc0MjI1MjA5Mzgy.X6NxGA.hBMf_YH6nz1oqxKQ9CSuJpbXiUY');
+bot.login(token);
 let users = [];
 
 bot.on('ready', () => {
