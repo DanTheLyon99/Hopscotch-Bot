@@ -4,10 +4,8 @@ module.exports = (client, aliases, users, callback ) => {
 
 
     client.on('message', message =>{
-        message.guild.members.forEach(member => {
-            users.push(member.id)
-        })
-
+        const {voice} = message.member;
+        callback(message);
     })
 
 }
